@@ -24,7 +24,7 @@
       <a class="btn btn-success btn-lg" href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" role="button">Learn more about Bootstrap CSS Framework</a>
     </div>
     <!-- The content of the website ends here! -->
-    <head>RMIT</head>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
