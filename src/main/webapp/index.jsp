@@ -27,6 +27,37 @@
     <head>RMIT</head>
     <head>System Deployment<head>
     <!-- Optional JavaScript -->
+<%-- Add this logging code --%>
+<%@ page import="java.io.*, java.util.Date, java.text.SimpleDateFormat" %>
+<%
+    try {
+        // Define the path for the log file inside the container
+        String logDirPath = "/usr/local/tomcat/logs";
+        String logFilePath = logDirPath + "/app.log";
+
+        // Ensure the log directory exists
+        File logDir = new File(logDirPath);
+        if (!logDir.exists()) {
+            logDir.mkdirs();
+        }
+
+        // Open the log file in append mode (the 'true' flag)
+        PrintWriter outLog = new PrintWriter(new FileWriter(logFilePath, true));
+        
+        // Create a timestamp
+        String timestamp = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
+        
+        // Write the log entry
+        outLog.println(timestamp + " - Page accessed by a user.");
+        
+        // IMPORTANT: Close the writer to save the changes
+        outLog.close();
+    } catch (IOException e) {
+        // Basic error handling
+        e.printStackTrace();
+    }
+%>
+<p style="color: green;"><b>A new log entry was just added to /usr/local/tomcat/logs/app.log!</b></p>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
