@@ -24,8 +24,9 @@
       <a class="btn btn-success btn-lg" href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" role="button">Learn more about Bootstrap CSS Framework</a>
     </div>
     <!-- The content of the website ends here! -->
-    <head>R M I T</head>
+    <head>RMIT</head>
     <head>System Deployment<head>
+    <p>Tom Huynh</p>
     <!-- Optional JavaScript -->
 <%-- Add this logging code --%>
 <%@ page import="java.io.*, java.util.Date, java.text.SimpleDateFormat" %>
