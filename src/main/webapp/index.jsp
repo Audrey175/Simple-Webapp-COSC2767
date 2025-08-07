@@ -24,7 +24,7 @@
       <a class="btn btn-success btn-lg" href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" role="button">Learn more about Bootstrap CSS Framework</a>
     </div>
     <!-- The content of the website ends here! -->
-    <head>RMIT</head>
+    <head>R M I T</head>
     <head>System Deployment<head>
     <!-- Optional JavaScript -->
 <%-- Add this logging code --%>
